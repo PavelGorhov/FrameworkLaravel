@@ -16,6 +16,9 @@ Route::get('chrt',[TestController::class,'questOne']);
 Route::get('my-name',[TestController::class,'questTwo']);
 Route::get('my-eat',[TestController::class,'questThree']);
 Route::get('my-sum',[TestController::class,'questFour']);
+Route::get('my-sumget',[TestController::class,'questFive']);
+Route::get('myshifr',[TestController::class,'questSix']);
+
 
 
 Route::get('/', function () {

@@ -33,7 +33,20 @@ class TestController extends Controller
         return $sum;
     }
     public function questFive(Request $request){
-        $numbers=[];
-        if($request->has('num1')&&)k
+        $ch1 = $request->ch1;
+        $ch2 = $request->ch2;
+        $ch3 = $ch1 + $ch2;
+        return $ch3;
     }
+    public function questSix(Request $request){
+        $shifr = $request->cipher;
+        if($shifr == 'keyOneTest')
+        {
+            return 'Я взломал шифр';
+        }
+        else
+        {
+            return 'Нет доступа';
+        }
+}
 }
