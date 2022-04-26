@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use \App\Http\Controllers\TestController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,12 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('chrt',[TestController::class,'questOne']);
+Route::get('my-name',[TestController::class,'questTwo']);
+Route::get('my-eat',[TestController::class,'questThree']);
+Route::get('my-sum',[TestController::class,'questFour']);
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('my-name', function () {
+Route::get('name', function () {
     return ('Русанов Роман Витальевич');
 });
 
