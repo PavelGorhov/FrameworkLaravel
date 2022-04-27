@@ -19,7 +19,13 @@ Route::get('my-sum',[TestController::class,'questFour']);
 Route::get('my-sumget',[TestController::class,'questFive']);
 Route::get('myshifr',[TestController::class,'questSix']);
 
-
+Route::get('template/{detach}', [TestController::class, 'lessonTemplateOne']);
+Route::get('politica', [TestController::class, 'politcaKonf']);
+Route::get('pol', [TestController::class, 'polit']);
+Route::get('book', [TestController::class, 'FavoriteBook']);
+Route::get('li', [TestController::class, 'li']);
+Route::get('div', [TestController::class, 'div']);
+Route::get('span', [TestController::class, 'span']);
 
 Route::get('/', function () {
     return view('welcome');
