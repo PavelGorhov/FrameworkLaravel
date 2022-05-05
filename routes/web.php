@@ -96,3 +96,6 @@ Route::redirect('/admin/web', '/admin/color');
 Route::get('/color/{hex}', function ($hex){
     return $hex;
 }) -> where('hex', '[0-9a-fA-F]{6}+');
+Route::get('main', function (){
+    return view('index');
+});
